@@ -35,7 +35,7 @@
         private void InitializeComponent()
         {
             this.tab1 = this.Factory.CreateRibbonTab();
-            this.group1 = this.Factory.CreateRibbonGroup();
+            this.textProcessing = this.Factory.CreateRibbonGroup();
             this.tab2 = this.Factory.CreateRibbonTab();
             this.tab1.SuspendLayout();
             this.tab2.SuspendLayout();
@@ -43,14 +43,14 @@
             // tab1
             // 
             this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
-            this.tab1.Groups.Add(this.group1);
+            this.tab1.Groups.Add(this.textProcessing);
             this.tab1.Label = "TabAddIns";
             this.tab1.Name = "tab1";
             // 
-            // group1
+            // textProcessing
             // 
-            this.group1.Label = "group1";
-            this.group1.Name = "group1";
+            this.textProcessing.Label = "Text File Processing";
+            this.textProcessing.Name = "textProcessing";
             // 
             // tab2
             // 
@@ -74,7 +74,7 @@
         #endregion
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup textProcessing;
         private Microsoft.Office.Tools.Ribbon.RibbonTab tab2;
     }
 
